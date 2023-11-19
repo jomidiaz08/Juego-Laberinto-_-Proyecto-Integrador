@@ -1,1 +1,1 @@
-# Juego-Laberinto-_-Proyecto-Integrador
+Este el proyecto de video juego donde utilizaremos texto para crear un laberinto, donde visualizaremos la "P" como el personaje, el "#" representará la pared y nos movilizaremos con las flechas de tu teclado hacia arriba, abajo derecha o izquierda.
