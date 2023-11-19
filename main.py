@@ -1,15 +1,22 @@
-import readchar
-from readchar import key
+import readchar 
+import os
+def clear_terminal():
+
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 def main():
-    print("Presiona la tecla ↑. Para salir del bucle")
+    numero = 0
 
-    while True:
-        char = readchar.readkey()
-        print(f"Tecla presionada: {char}")
-        if char == key.UP:
-            break
+    while numero <= 50:
+    
+        clear_terminal()
 
-    print("Bucle finalizado.")
+        print(f"Número: {numero}")
+
+        key = readchar.readkey()
+
+        if key == 'n':
+            numero += 1
 
 if __name__ == "__main__":
     main()
