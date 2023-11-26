@@ -22,9 +22,7 @@ class Juego:
             return mapa_archivo.read().strip()
 
     def cadena_a_matriz(self, cadena_maze):
-        filas_maze = cadena_maze.strip().split("\n")
-        matriz_maze = [list(fila) for fila in filas_maze]
-        return matriz_maze
+        return list(map(list, cadena_maze.strip().split("\n")))
 
     def encontrar_posiciones_inicio_y_fin(self, matriz_maze):
         for i in range(len(matriz_maze)):
